@@ -1,6 +1,6 @@
 {
   "name": "@tdix0n/connector-gsheets-ratelimit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Google Sheet connector for https://evidence.dev with rate limiting",
   "main": "index.mjs",
   "keywords": [

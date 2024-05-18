@@ -108,7 +108,7 @@ export async function* processSource(opts, files, utils) {
                 content: name + "_" + page.title
             }
 
-            await new Promise(resolve => setTimeout(resolve, 1000)); // Pause for 1 second
+            await new Promise(resolve => setTimeout(resolve, 2000)); // Pause for 2 seconds
         }
     }
     return null

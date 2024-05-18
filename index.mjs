@@ -46,11 +46,9 @@ export async function* processSource(opts, files, utils) {
         let sheet;
         if (typeof id === "string") {
             sheet = new GoogleSpreadsheet(id, auth)
-            console.log("Test")
         } else {
             if ("id" in id) {
                 sheet = new GoogleSpreadsheet(id.id, auth)
-                console.log("Test")
             } else {
                 throw new Error(`Sheet ${name} does not have an id!`)
             }
@@ -110,7 +108,7 @@ export async function* processSource(opts, files, utils) {
                 content: name + "_" + page.title
             }
 
-            await new Promise(resolve => setTimeout(resolve, 3000)); // Pause for 5 seconds
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Pause for 1 second
         }
     }
     return null
